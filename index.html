@@ -1,24 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LearnJapan</title>
     <style>
-        #title {text-align: center;
-        color: brown;}
+      * {
+        padding: 5px;
+        margin: 0;
+      }
+      #title {
+        text-align: center;
+        color: brown;
+        font-family: cursive;
+        font-size: 30px;
+      }
 
+      nav.nav {
+        background-color: skyblue;
+        color: blue;
+        margin: 20px;
+        text-align: center;
+      }
+
+      li {
+        float: left;
+        border-right: 0.5px solid white;
+        font-family: "Times New Roman", Times, serif;
+        margin: 2px;
+        font-size: 18px;
+      }
+
+      .nav .container .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .navlinks {
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+
+      .navlinks ul li {
+        display: inline-block;
+        padding: 0 10px;
+      }
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      .home:hover {
+        box-shadow: inset 0 -5px 0 0 greenyellow;
+      }
+      .basic:hover {
+        box-shadow: inset 0 -5px 0 0 lightsalmon;
+      }
+      .sentences:hover {
+        box-shadow: inset 0 -5px 0 0 lightpink;
+      }
+      .higher:hover {
+        box-shadow: inset 0 -5px 0 0 white;
+      }
+      .manners:hover {
+        box-shadow: inset 0 -5px 0 0 greenyellow;
+      }
+      .trivia:hover {
+        box-shadow: inset 0 -5px 0 0 palevioletred;
+      }
+      .contact:hover {
+        box-shadow: inset 0 -5px 0 0 blue;
+      }
+
+      .welcome {
+        text-align: center;
+      }
+
+      img {justify-content: right;}
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1 id="title">Japanese Trivia!!!</h1>
+    <nav class="nav">
+      <div class="container">
+        <div class="navlinks">
+          <ul>
+            <li><a href="#">Logo</a></li>
+            <li><a href="#" class="home">Home</a></li>
+            <li><a href="" class="basic">Basic Japanese</a></li>
+            <li><a href="" class="sentences">Japanese Sentences</a></li>
+            <li><a href="" class="higher">Higher Level Japanese</a></li>
+            <li><a href="" class="manners">Manners and Rules in Japan</a></li>
+            <li><a href="" class="trivia">Japan Trivia</a></li>
+            <li><a href="" class="contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <ul>
-        <li><a href="#">Home</a></li>
-    </ul>
-
-
-    
-</body>
+    <div><h3 class="welcome">Welcome to this website!!</h3></div>
+    <div>
+      <h4>Basic Idea</h4>
+      <img
+    src="images/jpflag.jpg"
+    alt="Japanese flag"
+    title="Japanese flag"
+    height="200"
+  />
+      <p>
+        Japan is a great country. There are so many great food, places for
+        sightseeing, and enjoyments. Japan is known for its politeness, great
+        hospitality and clean countries so it is must-visit country for
+        foreigners. However, there is one big worry when visiting Japan;
+        culture. Visitors may feel hard in Japan because people do not speak
+        English in general, and they may also feel weird since there are certain
+        manners and rules you should follow. So this website will show some
+        basic Japanese and trivia which can be used when you visit Japan or talk
+        to Japanese people!!
+      </p>
+      <p>I hope you will learn and enjoy!</p>
+    </div>
+    <br /><br />
+    <div>
+      <h4>What is this website about?</h4>
+      <p>
+        This website is a learning material of basic Japanese and tips that you
+        can use when visiting to Japan. You can know about basic Japanese, some
+        useful Japanese sentences and phrases, higher level Japanese, manners
+        and rules in Japan, trivia of Japan.
+      </p>
+    </div>
+    <br /><br />
+    <div>
+      <h4>Who am I?</h4>
+      <p>
+        I am attending Babson College from a Japanese university as an exchange
+        student. As a representative from Japan, I would like to not only gain
+        the US culture but also give some Japanese trivia to foreigners.
+      </p>
+    </div>
+  </body>
 </html>
