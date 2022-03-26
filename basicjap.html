@@ -6,46 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Japanese</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <style>
-        table,
-      th,
+
+* {
+        padding: 5px;
+        margin: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+      }
+      #title {
+        text-align: center;
+        color: brown;
+        font-family: cursive;
+        font-size: 30px;
+      }
+
+      nav.nav {
+        background-color: skyblue;
+        color: blue;
+        margin: 10px;
+        text-align: center;
+      }
+
+      li.navigation  {
+        float: left;
+        border-right: 0.5px solid white;
+        font-family: "Times New Roman", Times, serif;
+        margin: 2px;
+        font-size: 18px;
+      }
+
+      .nav .container .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .navlinks {
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+
+      .navlinks ul.navigation li.navigation {
+        display: inline-block;
+        padding: 0 10px;
+      }
+      a.navigation {
+        color: blue;
+        text-decoration: none;
+      }
+
+      .home:hover {
+        box-shadow: inset 0 -5px 0 0 greenyellow;
+      }
+      .basic:hover {
+        box-shadow: inset 0 -5px 0 0 lightsalmon;
+      }
+      .sentences:hover {
+        box-shadow: inset 0 -5px 0 0 lightpink;
+      }
+      .waseda:hover {
+        box-shadow: inset 0 -5px 0 0 white;
+      }
+      .sitemap:hover {
+        box-shadow: inset 0 -5px 0 0 greenyellow;
+      }
+      
+      .contact:hover {
+        box-shadow: inset 0 -5px 0 0 blue;
+      }
+
+        table.hiragana, table.katakana
+      th.basics,
       td {
         border: 1px black solid;
       }
 
-      table {
+      table.hiragana, table.katakana {
         border-collapse: collapse;
         float: center;
         table-layout: auto;
         width: 40%;
-        margin-left: 20px;
-        margin-right: 20px;
+        
       }
 
-      tr:nth-child(odd) {background-color: aqua;
+      tr.basics:nth-child(odd) {background-color: aqua;
         font-weight: bold;
         font-size: large;
     }
-    tr:nth-child(even) {background-color: bisque;
+    tr.basics:nth-child(even) {background-color: bisque;
     font-weight: lighter;
 font-size: small;}
 
 .hiragana {
     float: left;
+    margin-left: 10%;
 }
 
-.katakana {float:right;}
+.katakana {float:right;
+margin-right: 7%;}
 
 table.practice {background-color: aliceblue;}
 
+#begin {text-align: center;}
 
+.new {position: relative;}
     </style>
 </head>
 
 <body>
-    <h3>Basic Japanese</h3>
-
-    <h4>Before You Begin...</h4>
+    <h3 id="title">Basic Japanese</h3>
+    <nav class="nav">
+      <div class="container">
+        <div class="navlinks">
+          <ul class="navigation">
+            <li class="navigation"><a href="index.html"><img src="images/apple-touch-icon.png" alt="icon" title="logo" height="30px" width="30px"> </a></li>
+            <li class="navigation"><a href="index.html" class="home">Home</a></li>
+            <li class="navigation"><a href="basicjap.html" target="blank" class="basic">Basic Japanese</a></li>
+            <li class="navigation"><a href="japsentences.html" target="blank" class="sentences">Japanese Sentences</a></li>
+           <li class="navigation"><a href="waseda.html" target="blank" class="waseda">Waseda University</a> </li>
+            <li  class="navigation"><a href="contact.html" target="blank" class="contact">Contact</a></li>
+            <li class="navigation"><a href="sitemap.html" target="blank"  class="sitemap">Sitemap</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h4 id="begin">Before You Begin...</h4>
     <p>Japanese consist of three different basics. Hiragana, Katakana, and Kanji. </p>
     <p>Hiragana is the most basic alphabet of Japanese. Katakana is used to describe the word or sentences coming from
         outside of Japan. Kanji is used to shorten words when you write. When you speak Japanese, you use the
@@ -60,7 +153,7 @@ table.practice {background-color: aliceblue;}
     <table class="hiragana">
         <caption>ひらがな (Hiragana)</caption>
 
-        <tr>
+        <tr class="basics">
             <td>あ</td>
             <td>
                 い
@@ -69,13 +162,13 @@ table.practice {background-color: aliceblue;}
             <td>え</td>
             <td>お</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>a</td>
             <td>i</td>
             <td>u</td>
             <td>e</td>
             <td>o</td>
-        <tr>
+        <tr class="basics">
             <td>か
             </td>
             <td>
@@ -86,13 +179,13 @@ table.practice {background-color: aliceblue;}
             <td>こ
             </td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ka</td>
             <td>ki</td>
             <td>ku</td>
             <td>ke</td>
             <td>ko</td>
-        <tr>
+        <tr class="basics">
             <td>さ</td>
             <td>
                 し
@@ -101,13 +194,13 @@ table.practice {background-color: aliceblue;}
             <td>せ</td>
             <td>そ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>sa</td>
             <td>si</td>
             <td>su</td>
             <td>se</td>
             <td>so</td>
-        <tr>
+        <tr class="basics">
             <td>た</td>
             <td>
                 ち
@@ -116,13 +209,14 @@ table.practice {background-color: aliceblue;}
             <td>て</td>
             <td>と</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ta</td>
             <td>ti</td>
             <td>tu</td>
             <td>te</td>
             <td>to</td>
         </tr>
+        <tr class="basics">
         <td>な</td>
         <td>
             に
@@ -131,14 +225,14 @@ table.practice {background-color: aliceblue;}
         <td>ね</td>
         <td>の</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>na</td>
             <td>ni</td>
             <td>nu</td>
             <td>ne</td>
             <td>no</td>
         </tr>
-
+<tr class="basics">
         <td>は</td>
         <td>
             ひ
@@ -147,14 +241,14 @@ table.practice {background-color: aliceblue;}
         <td>へ</td>
         <td>ほ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ha</td>
             <td>hi</td>
             <td>hu</td>
             <td>he</td>
             <td>ho</td>
         </tr>
-
+<tr class="basics">
         <td>ま</td>
         <td>
             み
@@ -163,13 +257,14 @@ table.practice {background-color: aliceblue;}
         <td>め</td>
         <td>も</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ma</td>
             <td>mi</td>
             <td>mu</td>
             <td>me</td>
             <td>mo</td>
         </tr>
+        <tr class="basics">
         <td>や</td>
         <td>
             
@@ -178,13 +273,14 @@ table.practice {background-color: aliceblue;}
         <td></td>
         <td>よ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ya</td>
             <td></td>
             <td>yu</td>
             <td></td>
             <td>yo</td>
         </tr>
+        <tr  class="basics">
         <td>ら</td>
         <td>
             り
@@ -193,13 +289,14 @@ table.practice {background-color: aliceblue;}
         <td>れ</td>
         <td>ろ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ra</td>
             <td>ri</td>
             <td>ru</td>
             <td>re</td>
             <td>ro</td>
         </tr>
+        <tr class="basics">
         <td>わ</td>
         <td>
             
@@ -208,7 +305,7 @@ table.practice {background-color: aliceblue;}
         <td></td>
         <td>ん</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>wa</td>
             <td></td>
             <td>wo</td>
@@ -218,7 +315,7 @@ table.practice {background-color: aliceblue;}
     </table>
     <table class="katakana">
         <caption>カタカナ (Katakana)</caption>
-        <tr>
+        <tr class="basics">
             <td>ア</td>
             <td>
                 イ
@@ -227,13 +324,13 @@ table.practice {background-color: aliceblue;}
             <td>エ</td>
             <td>オ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>a</td>
             <td>i</td>
             <td>u</td>
             <td>e</td>
             <td>o</td>
-        <tr>
+        <tr class="basics">
             <td>カ
             </td>
             <td>
@@ -244,13 +341,13 @@ table.practice {background-color: aliceblue;}
             <td>コ
             </td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ka</td>
             <td>ki</td>
             <td>ku</td>
             <td>ke</td>
             <td>ko</td>
-        <tr>
+        <tr class="basics">
             <td>サ</td>
             <td>
                 シ
@@ -259,13 +356,13 @@ table.practice {background-color: aliceblue;}
             <td>セ</td>
             <td>ソ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>sa</td>
             <td>si</td>
             <td>su</td>
             <td>se</td>
             <td>so</td>
-        <tr>
+        <tr class="basics">
             <td>タ</td>
             <td>
                 チ
@@ -274,13 +371,14 @@ table.practice {background-color: aliceblue;}
             <td>テ</td>
             <td>ト</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ta</td>
             <td>ti</td>
             <td>tu</td>
             <td>te</td>
             <td>to</td>
         </tr>
+        <tr class="basics">
         <td>ナ</td>
         <td>
             ニ
@@ -289,14 +387,14 @@ table.practice {background-color: aliceblue;}
         <td>ネ</td>
         <td>ノ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>na</td>
             <td>ni</td>
             <td>nu</td>
             <td>ne</td>
             <td>no</td>
         </tr>
-
+        <tr class="basics">
         <td>ハ</td>
         <td>
             ヒ
@@ -305,14 +403,14 @@ table.practice {background-color: aliceblue;}
         <td>ヘ</td>
         <td>ホ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ha</td>
             <td>hi</td>
             <td>hu</td>
             <td>he</td>
             <td>ho</td>
         </tr>
-
+        <tr class="basics">
         <td>マ</td>
         <td>
             ミ
@@ -321,13 +419,14 @@ table.practice {background-color: aliceblue;}
         <td>メ</td>
         <td>モ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ma</td>
             <td>mi</td>
             <td>mu</td>
             <td>me</td>
             <td>mo</td>
         </tr>
+        <tr class="basics">
         <td>ヤ</td>
         <td>
             
@@ -336,13 +435,14 @@ table.practice {background-color: aliceblue;}
         <td></td>
         <td>ヨ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ya</td>
             <td></td>
             <td>yu</td>
             <td></td>
             <td>yo</td>
         </tr>
+        <tr class="basics">
         <td>ラ</td>
         <td>
             リ
@@ -351,13 +451,14 @@ table.practice {background-color: aliceblue;}
         <td>レ</td>
         <td>ロ</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>ra</td>
             <td>ri</td>
             <td>ru</td>
             <td>re</td>
             <td>ro</td>
         </tr>
+        <tr class="basics">
         <td>ワ</td>
         <td>
             
@@ -366,7 +467,7 @@ table.practice {background-color: aliceblue;}
         <td></td>
         <td>ン</td>
         </tr>
-        <tr>
+        <tr class="basics">
             <td>wa</td>
             <td></td>
             <td>wo</td>
@@ -375,11 +476,17 @@ table.practice {background-color: aliceblue;}
         </tr>
     </table>
 </div>
-<br>
-    <p class="new">Did you realize something??</p>
-You may realize that most of letter contain vowel of a i u e o (あ い う え お) and combine it with a consonant (k s t n h m y r w) can produce the basic alphabet and its sound. 
 
-<P>Now, let's try to read some basic Japanese words! </P>
+<br>
+<div>
+    <p class="new">Did you realize something??</p>
+<p>You may realize that most of letter contain vowel of a i u e o (あ い う え お) and combine it with a consonant (k s t n h m y r w) can produce the basic alphabet and its sound. </p>
+<p>For example, vowel a (あ) + consoant k creates ka (か).</p>
+</div>
+<div>
+<br>
+<h4>Practice Time!</h4>
+<p>Now, let's try to read some basic Japanese words! </p>
 <table class="practice">
 <tr>
     <th>English</th>
@@ -401,7 +508,7 @@ You may realize that most of letter contain vowel of a i u e o (あ い う え 
     <td>こんばんは</td>
     <td>ko nn ba nn wa</td>
 </tr>
-
+</div>
 </table>
 </body>
 
