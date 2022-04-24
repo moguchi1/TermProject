@@ -3,8 +3,15 @@
   padding: 5px;
   margin: 0;
   margin-left: 12%;
-  margin-right: 12%;
+  margin-right: 19%;
   background-color: white;
+}
+
+
+.edge {
+  margin-left: 5%;
+  margin-right: 3%;
+  margin-bottom: 7%;
 }
 
 .body {
@@ -104,11 +111,31 @@ a.navigation {
   text-align: center;
 }
 
-img {float: right;}
+#flag {float: right;
+margin-right: 5%;}
+
+#kyoto {
+  float: left; 
+  margin-right: 3%;
+  margin-bottom: 8%;
+}
 
 #japvid {
   width: 100%; 
   height: 370px;
 }
 
+#basic {
+  justify-content: flex-start; 
+}
 
+.whoami {
+  clear:left; 
+  margin-top: 14px;
+}
+
+#kyoto2 {
+  float: right; 
+  margin-right: 4%;
+  margin-bottom: 5%;
+}
