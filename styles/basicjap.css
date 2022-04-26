@@ -18,6 +18,7 @@
     color: brown;
     font-family: cursive;
     font-size: 30px;
+    margin-top: 2%;
 }
 
 nav.nav {
@@ -110,11 +111,13 @@ tr.basics:nth-child(even) {
 
 .hiragana {
     float: left;
-    margin-left: 10%;
+    margin-left: 7%;
+    margin-right: 3%; 
+    margin-bottom: 5%; 
 }
 
 .katakana {
-    float:right;
+    float:left;
     margin-right: 7%;}
 
 table.practice {
@@ -127,4 +130,5 @@ table.practice {
 
 .new {
     position: relative;
+    clear: left; 
 }
