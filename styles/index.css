@@ -139,3 +139,17 @@ margin-right: 5%;}
   margin-right: 4%;
   margin-bottom: 5%;
 }
+
+
+.video {
+  margin-top: 14%;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* #vid {
+  max-width: 45%;
+  text-align: center;
+  justify-content: center;
+} */

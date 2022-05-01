@@ -2,77 +2,170 @@
         .cap {font-weight: bold;
         text-decoration: underline;}
         
-        * {
-        padding: 5px;
-        margin: 0;
-        margin-left: 1%;
-        margin-right: 1%;
-      }
+        .body {
+            background-color: antiquewhite;
+        }
+
       #title {
         text-align: center;
         color: brown;
         font-family: cursive;
         font-size: 30px;
       }
-
       nav.nav {
         background-color: skyblue;
         color: blue;
         margin: 10px;
         text-align: center;
-      }
-
-      li.navigation  {
+        border-radius: 50%;
+        opacity: 90%;
+       
+    }
+    
+    li.navigation  {
         float: left;
         border-right: 0.5px solid white;
         font-family: "Times New Roman", Times, serif;
         margin: 2px;
-        font-size: 18px;
-      }
-
-      .nav .container .logo {
+        font-size: 25px;
+         opacity: 100%;
+    }
+    
+    .nav .container .logo {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-      }
-
-      .navlinks {
+    }
+    
+    .navlinks {
         list-style: none;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-      }
-
-      .navlinks ul.navigation li.navigation {
+    }
+    
+    .navlinks ul.navigation li.navigation {
         display: inline-block;
         padding: 0 10px;
-      }
-      a.navigation {
+    }
+    a.navigation {
         color: blue;
         text-decoration: none;
-      }
-
-      .home:hover {
+    }
+    
+    .home:hover {
         box-shadow: inset 0 -5px 0 0 greenyellow;
-      }
-      .basic:hover {
-        box-shadow: inset 0 -5px 0 0 lightsalmon;
-      }
-      .sentences:hover {
-        box-shadow: inset 0 -5px 0 0 lightpink;
-      }
-      .waseda:hover {
+    }
+    .basic:hover {
+         box-shadow: inset 0 -5px 0 0 lightsalmon;
+    }
+    .sentences:hover {
+         box-shadow: inset 0 -5px 0 0 lightpink;
+    }
+    .waseda:hover {
         box-shadow: inset 0 -5px 0 0 white;
-      }
-      .sitemap:hover {
-        box-shadow: inset 0 -5px 0 0 greenyellow;
-      }
-      
-      .contact:hover {
+    }
+    .sitemap:hover {
+         box-shadow: inset 0 -5px 0 0 greenyellow;
+    }
+    
+    .contact:hover {
         box-shadow: inset 0 -5px 0 0 blue;
-      }
+    }
+    
 
       #begin {
           text-align: center;
+      }
+
+      .content {
+        padding: 5px;
+        margin: 0;
+        margin-left: 12%;
+        margin-right: 12%;
+        background-color: white;
+      }
+
+
+      .edge {
+        margin-left: 5%;
+        margin-right: 3%;
+        margin-bottom: 7%;
+      }
+
+      #harder {
+          margin-top: 5%;
+      }
+
+      #higher {
+          margin-top: 5%;
+          margin-bottom: 3%;
+      }
+
+
+
+
+      
+      .droptarget {
+        float: left;
+        width: 150px;
+        height: 200px;
+        margin: 15px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+      }
+
+      .droptarget2 {
+        float: left;
+        width: 150px;
+        height: 200px;
+        margin: 15px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+      }
+
+      #hint {
+        float: left;
+      }
+
+      #source {
+        clear: left;
+      }
+
+      #answer {
+        display: none;
+        clear: left;
+      }
+
+      #words {
+        font-weight: bold;
+        color: black;
+      }
+
+      #color {
+        font-weight: bold;
+        color: mediumaquamarine;
+      }
+
+      #plant {
+        font-weight: bold;
+        color: green;
+      }
+
+      .target-answer {
+        float: left;
+        width: 150px;
+        height: 200px;
+        margin: 15px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+      }
+
+      #button {
+          clear: left;
+      }
+
+      #game{
+        margin-top: 7%;
       }
