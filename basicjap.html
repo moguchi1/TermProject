@@ -53,12 +53,16 @@
       </nav>
       
 <div class="content">
+    <div class="edge">
     <h4 id="begin">Before You Begin...</h4>
-    <p>Japanese consist of three different basics. Hiragana, Katakana, and Kanji. </p>
-    <p>Hiragana is the most basic alphabet of Japanese. Katakana is used to describe the word or sentences coming from
-        outside of Japan. Kanji is used to shorten words when you write. When you speak Japanese, you use the
-        pronunciation of Hiragana. When you write, almost all sentences contain Hiragana and Kanji. Let’s see each
-        Japanese basics one by one. </p>
+    <p>Japanese consist of three different basics: <strong>Hiragana, Katakana</strong>, and <strong>Kanji.</strong> </p>
+    <div id="break"><p><strong><u>Hiragana</u></strong> is the most basic alphabet of Japanese. 
+        <br><strong><u>Katakana</u></strong> is used to describe the word or sentences coming from
+        outside of Japan. 
+        <br><strong><u>Kanji</u></strong> is used to shorten words when you write. </div>
+        <p>When you speak Japanese, you use the
+        pronunciation of Hiragana. When you write, almost all sentences contain Hiragana and Kanji. 
+        <br>Mastering Kanji requires a lot of works, so let's first study Hiragana and Katakana!</p> </p>
     <br>
     <br>
     <p>
@@ -126,7 +130,7 @@
         </tr>
         <tr class="basics">
             <td>ta</td>
-            <td>ti</td>
+            <td>chi</td>
             <td>tu</td>
             <td>te</td>
             <td>to</td>
@@ -268,7 +272,7 @@
             <td>
                 シ
             </td>
-            <td>シ</td>
+            <td>ス</td>
             <td>セ</td>
             <td>ソ</td>
         </tr>
@@ -283,13 +287,13 @@
             <td>
                 チ
             </td>
-            <td>チ</td>
+            <td>ツ</td>
             <td>テ</td>
             <td>ト</td>
         </tr>
         <tr class="basics">
             <td>ta</td>
-            <td>ti</td>
+            <td>chi</td>
             <td>tu</td>
             <td>te</td>
             <td>to</td>
@@ -395,20 +399,40 @@
 
 <br>
 <div>
-    <p class="new">Did you realize something??</p>
+    <p class="new"><i><strong><u>Did you realize something??</u></strong></i></p>
+    <div id="realize">
 <p>You may realize that most of letter contain vowel of a i u e o (あ い う え お) and combine it with a consonant (k s t n h m y r w) can produce the basic alphabet and its sound. </p>
-<p>For example, vowel a (あ) + consoant k creates ka (か).</p>
+<p>For example, vowel "a" (あ) + consoant "k" creates "ka" (か). (check the word with the Generator below) </p>
 <p>Yet, most fundamental and important Japanese is Hiragana, so let's keep practicing it!!</p>
-</div>
+    </div></div>
 
+<div id="game"><fieldset>
+    <legend><h4>Hiragana Generator!</h4></legend>
+    <p>Input consonant (k, s, t, n, h, m, y, r, w) and vowel (a, i, u, e, o) to create Hiragana!</p>
+
+    <div>
+        <form action="" class="game">
+            Consonant <input type="text"  id="consonant">
+            +
+            Vowel <input type="text" id="vowel"  >
+            =
+           Hiragana <input type="text" id="result" disabled readonly/>
+           <p><button type="button" id="button">Generate!</button>
+        </form>
+    </div>
+    </fieldset>
+</div>
 <!-- practicing japanese game -->
 
 
 <div>
 <br>
-<h4>Practice Time!</h4>
+<fieldset>
+<legend><h4>Practice Time!</h4></legend>
+<div class="time">
 <p>Now, let's try to read some basic Japanese words! </p>
-<table class="practice">
+Guess how to read following Japanese and press "Show!" button to find out answers!
+<table class="practice" id="practice">
 <tr>
     <th>English</th>
     <th>Japanese</th>
@@ -417,22 +441,221 @@
 <tr>
     <td>Good morning</td>
     <td>おはよう</td>
-    <td>o ha yo u</td>
+    <td class="pronunce">o ha yo u</td>
 </tr>
 <tr>
     <td>Hello/Good Afternoon</td>
     <td>こんにちは</td>
-    <td>ko nn ni chi wa</td>
+    <td class="pronunce">ko nn ni chi wa</td>
 </tr>
 <tr>
     <td>Good evening</td>
     <td>こんばんは</td>
-    <td>ko nn ba nn wa</td>
+    <td class="pronunce">ko nn ba nn wa</td>
 </tr>
 </div>
 </table>
+<button type="button" id="show">Show!</button>
+<button type="button" id="reset">Hide!</button>
 </div>
 </div>
-</body>
+</fieldset>
+</div>
+</div>
 
+<script>
+
+function generate(){
+    console.log ("starting"); 
+    const c = document.getElementById("consonant").value; 
+    console.log (c); 
+
+    const v = document.getElementById("vowel").value; 
+    console.log (v); 
+
+    let letter = c + v; 
+    console.log (letter); 
+
+    let hiragana; 
+    if (letter === "a"){
+        let hiragana = "あ"; 
+        console.log (z); 
+        document.getElementById("result").value = hiragana + "(" + letter + ")"; 
+    } else if (letter === "i"){
+        let hiragana = "い"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";
+    }else if (letter === "u"){
+        let hiragana = "う"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "e"){
+        let hiragana = "え"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "o"){
+        let hiragana = "お"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ka"){
+        let hiragana = "か"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ki"){
+        let hiragana = "き"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ku"){
+        let hiragana = "く"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ke"){
+        let hiragana = "け"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ko"){
+        let hiragana = "こ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "sa"){
+        let hiragana = "さ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "shi" || letter ==="si"){
+        let hiragana = "し"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "su"){
+        let hiragana = "す"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "se"){
+        let hiragana = "せ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "so"){
+        let hiragana = "そ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ta"){
+        let hiragana = "た"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "chi"|| letter ==="ti"){
+        let hiragana = "ち"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "tu"){
+        let hiragana = "つ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "te"){
+        let hiragana = "て"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "to"){
+        let hiragana = "と"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "na"){
+        let hiragana = "な"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ni"){
+        let hiragana = "に"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "nu"){
+        let hiragana = "ぬ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ne"){
+        let hiragana = "ね"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "no"){
+        let hiragana = "の"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ha"){
+        let hiragana = "は"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "hi"){
+        let hiragana = "ひ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "hu"){
+        let hiragana = "ふ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "he"){
+        let hiragana = "へ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ho"){
+        let hiragana = "ほ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ma"){
+        let hiragana = "ま"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "mi"){
+        let hiragana = "み"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "mu"){
+        let hiragana = "む"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "me"){
+        let hiragana = "め"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "mo"){
+        let hiragana = "も"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ya"){
+        let hiragana = "や"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "yu"){
+        let hiragana = "ゆ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "yo"){
+        let hiragana = "よ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ra"){
+        let hiragana = "ら"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ri"){
+        let hiragana = "り"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ru"){
+        let hiragana = "る"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "re"){
+        let hiragana = "れ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "ro"){
+        let hiragana = "ろ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "wa"){
+        let hiragana = "わ"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "wo"){
+        let hiragana = "を"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else if (letter === "nn"){
+        let hiragana = "ん"; 
+        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        else {
+           alert("Enter correct consonant or vowel!!");
+        }
+        
+
+
+
+}
+
+document.getElementById("button").onclick = function () {
+    generate(); 
+}
+
+function show(){
+    // document.getElementsByClassName("pronunce").style.display = "block"; 
+    let x = document.getElementsByClassName("pronunce"); 
+    let i; 
+    for (i= 0; i<x.length; i++){
+        x[i].style.display = "block"
+    }
+}
+
+
+document.getElementById("show").onclick = function(){
+    show();
+}
+
+function reset(){
+    let x = document.getElementsByClassName("pronunce"); 
+    let i; 
+    for (i= 0; i<x.length; i++){
+        x[i].style.display = "none"
+    }
+}
+
+document.getElementById("reset").onclick = function(){
+    reset();
+}
+
+</script>
+
+</body>
 </html>
