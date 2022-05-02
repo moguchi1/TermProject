@@ -117,3 +117,13 @@ font-size: 30px;
   #submit {
       text-align: center;
   }
+  
+  #next {
+    float: right;
+    margin-bottom: 3%;
+  }
+
+  #back {
+      float:left; 
+
+  }

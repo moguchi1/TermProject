@@ -142,11 +142,16 @@ margin-right: 5%;}
 
 
 .video {
-  margin-top: 14%;
+  margin-top: 10%;
   justify-content: center;
   text-align: center;
+  
 }
 
+#next {
+  float: right;
+  margin-bottom: 3%;
+}
 
 /* #vid {
   max-width: 45%;

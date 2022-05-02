@@ -152,7 +152,7 @@
 
 
 
-        
+
 
         <h3 id="harder">Harder sentences!</h3>
         <fieldset>
@@ -175,55 +175,60 @@
         </form>
 
         <fieldset id="game">
-        <legend><h3 ><i>Drag the Word Game</i></h3></legend>
-        <div>
-          <h4>
-            Instructions: This game is to check your Japanese vocab knowledge.
-          </h4>
-          <ol>
-            <li>Drag the words into correct genre box (Color or Plant).</li>
-            <li>Drag each word in order for hints.</li>
-            <li>
-              Press answer bottun to see answers.
-            </li>
-            <li>Reload the page to try again.</li>
-          </ol>
-        </div>
-        <div class="droptarget">
-          <span id="words">Words</span>
-          <p id="dragtarget" draggable="true">1. あか(a ka)</p>
-          <p id="dragtarget" draggable="true">2. あお(a o)</p>
-          <p id="dragtarget" draggable="true">3. くさ(ku sa)</p>
-        </div>
-        <div class="droptarget"><span id="color">Color: いろ(i ro)</span></div>
-        <div class="droptarget2">
-          <span id="plant">Plant: しょくぶつ(sho ku bu tu)</span>
-        </div>
-        <button type="button" id="button">Answer</button>
-        <button type="button" id="reset">Hide</button>
-
-        <p id="hint"></p>
-        <br /><br />
-        <div id="answer">
-          <p><strong>Correct Answer↓↓</strong></p>
-          <div class="target-answer"><span id="words">Words</span></div>
-          <div class="target-answer">
-            <span id="color">Color: いろ(i ro)</span>
-            <p>1. あか(a ka)</p>
-            <p>2. あお(a o)</p>
+          <legend>
+            <h3><i>Drag the Word Game</i></h3>
+          </legend>
+          <div>
+            <h4>
+              Instructions: This game is to check your Japanese vocab knowledge.
+            </h4>
+            <ol>
+              <li>Drag the words into correct genre box (Color or Plant).</li>
+              <li>Drag each word in order for hints.</li>
+              <li>
+                Press answer bottun to see answers.
+              </li>
+              <li>Reload the page to try again.</li>
+            </ol>
           </div>
-          <div class="target-answer">
+          <div class="droptarget">
+            <span id="words">Words</span>
+            <p id="dragtarget" draggable="true">1. あか(a ka)</p>
+            <p id="dragtarget" draggable="true">2. あお(a o)</p>
+            <p id="dragtarget" draggable="true">3. くさ(ku sa)</p>
+          </div>
+          <div class="droptarget"><span id="color">Color: いろ(i ro)</span></div>
+          <div class="droptarget2">
             <span id="plant">Plant: しょくぶつ(sho ku bu tu)</span>
-            <p>3. くさ(ku sa)</p>
           </div>
-        </div>
-      </fieldset>
+          <button type="button" id="button">Answer</button>
+          <button type="button" id="reset">Hide</button>
 
-  
+          <p id="hint"></p>
+          <br /><br />
+          <div id="answer">
+            <p><strong>Correct Answer↓↓</strong></p>
+            <div class="target-answer"><span id="words">Words</span></div>
+            <div class="target-answer">
+              <span id="color">Color: いろ(i ro)</span>
+              <p>1. あか(a ka)</p>
+              <p>2. あお(a o)</p>
+            </div>
+            <div class="target-answer">
+              <span id="plant">Plant: しょくぶつ(sho ku bu tu)</span>
+              <p>3. くさ(ku sa)</p>
+            </div>
+          </div>
+        </fieldset>
+
+        <br>
+        <hr>
+        <a href="waseda.html" target="blank" id="next">Waseda University →</a>
+        <a href="basicjap.html" target="blank" id="back">← Basic Japanes</a>
 
       </div>
     </div>
-    </div>
+  </div>
   <script>
 
     document.ondragstart = function (event) {
@@ -265,12 +270,12 @@
       show();
     }
 
-    function reset(){
+    function reset() {
       document.getElementById("answer").style.display = "none";
     }
 
-    document.getElementById("reset").onclick = function(){
-      reset(); 
+    document.getElementById("reset").onclick = function () {
+      reset();
     }
 
 

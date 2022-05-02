@@ -460,6 +460,10 @@ Guess how to read following Japanese and press "Show!" button to find out answer
 </div>
 </div>
 </fieldset>
+<br>
+        <hr>
+      <a href="japsentences.html" target="blank" id="next">Basic Japanese →</a>
+      <a href="index.html" target="blank" id="back">← Home</a>
 </div>
 </div>
 
@@ -477,145 +481,153 @@ function generate(){
     console.log (letter); 
 
     let hiragana; 
-    if (letter === "a"){
+    if (v === "a" && c === ""){
         let hiragana = "あ"; 
-        console.log (z); 
-        document.getElementById("result").value = hiragana + "(" + letter + ")"; 
-    } else if (letter === "i"){
+        document.getElementById("result").value = hiragana + "(" + v + ")"; 
+    } else if (v === "i" && c === ""){
         let hiragana = "い"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";
-    }else if (letter === "u"){
+        document.getElementById("result").value = hiragana + "(" + v + ")";
+    }else if (v === "u" && c === ""){
         let hiragana = "う"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "e"){
+        document.getElementById("result").value = hiragana + "(" + v + ")";}
+        else if (v === "e" && c === ""){
         let hiragana = "え"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "o"){
+        document.getElementById("result").value = hiragana + "(" + v + ")";}
+        else if (v === "o" && c === ""){
         let hiragana = "お"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ka"){
+        document.getElementById("result").value = hiragana + "(" + v + ")";}
+
+        else if (v === "a" && c === "k"){
         let hiragana = "か"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ki"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "i" && c === "k" ){
         let hiragana = "き"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ku"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "u" && c ==="k"){
         let hiragana = "く"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ke"){
+        document.getElementById("result").value = hiragana + "(" +  c + v + ")";}
+        else if (v === "e" && c ==="k"){
         let hiragana = "け"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ko"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "o" && c ==="k"){
         let hiragana = "こ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "sa"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+
+        else if (v === "a" && c ==="s"){
         let hiragana = "さ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "shi" || letter ==="si"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "hi" && c === "s" || v ==="i" && c ==="s"){
         let hiragana = "し"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "su"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "u" && c ==="s"){
         let hiragana = "す"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "se"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "e" && c ==="s"){
         let hiragana = "せ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "so"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "o" && c ==="s"){
         let hiragana = "そ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ta"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+
+        else if (v === "a" && c ==="t"){
         let hiragana = "た"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "chi"|| letter ==="ti"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "hi" && c ==="c"|| v ==="i" && c ==="t" ){
         let hiragana = "ち"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "tu"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "u" && c ==="t"){
         let hiragana = "つ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "te"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "e" && c ==="t"){
         let hiragana = "て"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "to"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "to" && c ==="t"){
         let hiragana = "と"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "na"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+
+        else if (v === "a" && c ==="n"){
         let hiragana = "な"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ni"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "i" && c ==="n"){
         let hiragana = "に"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "nu"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "u" && c ==="n"){
         let hiragana = "ぬ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ne"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "e" && c ==="n"){
         let hiragana = "ね"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "no"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "o" && c ==="n"){
         let hiragana = "の"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ha"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+
+        else if (v === "a" && c ==="h"){
         let hiragana = "は"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "hi"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "i" && c ==="h"){
         let hiragana = "ひ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "hu"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "u" && c ==="h"){
         let hiragana = "ふ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "he"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "e" && c ==="h"){
         let hiragana = "へ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ho"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "o" && c ==="h"){
         let hiragana = "ほ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ma"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+
+        else if (v === "a" &&  c ==="m"){
         let hiragana = "ま"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "mi"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "i" &&  c ==="m"){
         let hiragana = "み"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "mu"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "u" &&  c ==="m"){
         let hiragana = "む"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "me"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "e" &&  c ==="m"){
         let hiragana = "め"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "mo"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "o" &&  c ==="m"){
         let hiragana = "も"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ya"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+
+        else if (v === "a" &&  c ==="y"){
         let hiragana = "や"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "yu"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "u" &&  c ==="y"){
         let hiragana = "ゆ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "yo"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "o" &&  c ==="y"){
         let hiragana = "よ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ra"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+
+        else if (v === "a" &&  c ==="r"){
         let hiragana = "ら"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ri"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "i" &&  c ==="r"){
         let hiragana = "り"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ru"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "u" &&  c ==="r"){
         let hiragana = "る"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "re"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "e" &&  c ==="r"){
         let hiragana = "れ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "ro"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "o" &&  c ==="r"){
         let hiragana = "ろ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "wa"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+
+        else if (v === "a" &&  c ==="w"){
         let hiragana = "わ"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "wo"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "o" &&  c ==="w"){
         let hiragana = "を"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
-        else if (letter === "nn"){
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
+        else if (v === "n" &&  c ==="n" || v === "nn" || c === "nn"){
         let hiragana = "ん"; 
-        document.getElementById("result").value = hiragana + "(" + letter + ")";}
+        document.getElementById("result").value = hiragana + "(" + c + v + ")";}
         else {
            alert("Enter correct consonant or vowel!!");
         }

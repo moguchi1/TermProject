@@ -147,3 +147,13 @@
     margin-right: 5%;
     
 }
+
+#next {
+  float: right;
+  margin-bottom: 3%;
+}
+
+#back {
+    float:left; 
+    
+}

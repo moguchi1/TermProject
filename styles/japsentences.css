@@ -169,3 +169,13 @@
       #game{
         margin-top: 7%;
       }
+
+      #next {
+        float: right;
+        margin-bottom: 3%;
+      }
+    
+      #back {
+          float:left; 
+          
+      }
